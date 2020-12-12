@@ -37,3 +37,35 @@ Akan names are derived from Ghanian culture. Frequently in Ghana, children are g
 *Friday*: Afua
 
 *Saturday*: Ama
+
+###  **Author(s) information.**
+
+**NazarineWasonga** 
+
++  ["https://github.com/NazarineWasonga" ]
++  ["https://www.google.com/gmail/about/" ]
+
+### **Setup instructions**
+
+includes any scripts that need to be run if necessary.
+
+##  **BDD**
+
+BDD(Behavior Driven Development) integration plugin for Javascript
+
+## **Technologies used.**
+
+CSS
+
+HTML
+
+Javascript
+
+## **Contact information.**
++  ["https://github.com/NazarineWasonga" ]
+
++  ["https://www.google.com/gmail/about/" ]
+
+## **License and Copyright information.**
+
+Copyright(c) 2020 NazarineWasonga. Licensed under the MIT license.
