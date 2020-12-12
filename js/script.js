@@ -1,43 +1,66 @@
-<script >
-            var century, year, month, dayOfMonth, dayOfWeek, day;
-                //Get input
-                function getInput() {
-                    century = parseInt(document.getElementById("century").value);
-                    year = parseInt(document.getElementById("year").value);
-                    month = parseInt(document.getElementById("month").value);
-                    dayOfMonth = parseInt(document.getElementById("monthday").value);
+//General Array Function
+function MakeArray(n) {
+    this.length = n;
+    for (var i = 1; i <= n; i++) {
+        this[i] = 0;
+    }
+    }
+   
+//Initialize Days of Week Array
+days = new MakeArray(7);
+days[0] = "Sunday"
+days[1] = "Monday"
+days[2] = "Tuesday"
+days[3] = "Wednesday"
+days[4] = "Thursday"
+days[5] = "Friday"
+days[6] = "Saturday"
 
+//Initialize Months Array
+months = new MakeArray(12);
+months[0] = "January"
+months[1] = "February"
+months[2] = "March"
+months[3] = "April"
+months[4] = "May"
+months[5] = "June"
+months[6] = "July"
+months[7] = "August"
+months[8] = "September"
+months[9] = "October"
+months[10] = "November"
+months[11] = "December"
 
-                    if ((century == "") && (century <= 0) && (century >= 30)) {
-                        if (century == "") {
-                            alert("Input the correct gender");
-                        } else if ((year == "") && (year <= 0) && (year > 5000)) {
-                            return false;
-                        } else if (year == "") {
-                            alert("Input the correct year");
-                        } else if ((month == "") && (month > 12) && (month <= 0)) {
-                            return false;
-                        } else if (month == "") {
-                            alert("Input the correct month");
-                        } else if ((dayOfMonth == "") && (dayOfMonth > 31) && (dayOfMonth <= 0)) {
-                            return false;
-                        } else if (dayOfMonth == "") {
-                            alert("input the correct date");
-                            return false;
-                        }
-                    }
-                    //Calculate func
-                    function calculateDay() {
-                        dayOfWeek = ((((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + dayOfMonth) % 7) - 1;
-                        console.log(dayOfWeek); //Test the calculateDay function
-                        return (Math.floor(dayOfWeek));
-                        if (dayOfWeek < 0) {
-                            dayOfWeek = dayOfWeek * -1;
-                        }
-                        else if (dayOfWeek > 0) {
-                            return dayOfWeek;
-                        }
-                    }
-                }
-
-        </script>
+//Day of Week Function
+function compute(form) {
+    var val1 = parseInt(form.day.value, 10)
+    if ((val1 < 0) || (val1 > 31)) {
+        alert("Please enter valid day")
+    }
+    var val2 = parseInt(form.month.value, 10)
+    if ((val2 < 0) || (val2 > 12)) {
+        alert("Please enter valid month")
+    }
+    var val2x = parseInt(form.month.value, 10)
+    var val3 = parseInt(form.year.value, 10)
+    if (val3 < 1900) {
+        alert("Are you that old!")
+    }
+    if (val2 == 1) {
+        val2x = 13;
+        val3 = val3 - 1
+    }
+    if (val2 == 2) {
+        val2x = 14;
+        val3 = val3 - 1
+    }
+    var val4 = parseInt(((val2x + 1) * 3) / 5, 10)
+    var val5 = parseInt(val3 / 4, 10)
+    var val6 = parseInt(val3 / 100, 10)
+    var val7 = parseInt(val3 / 400, 10)
+    var val8 = val1 + (val2x * 2) + val4 + val3 + val5 - val6 + val7 + 2
+    var val9 = parseInt(val8 / 7, 10)
+    var val0 = val8 - (val9 * 7)
+    form.result1.value = months[val2] + " " + form.day.value + ", " + form.year.value
+    form.result2.value = days[val0]
+}
