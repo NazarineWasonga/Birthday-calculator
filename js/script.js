@@ -16,6 +16,27 @@ days[4] = "Thursday"
 days[5] = "Friday"
 days[6] = "Saturday"
 
+//Initialize male Akan names Array
+name[0] = "Kwasi"
+name[1] = "Kwadwo"
+name[2] = "Kwabena"
+name[3] = "Kwaku"
+name[4] = "Yaw"
+name[5] = "kofi"
+name[6] = "Kwame"
+
+//Initialize female Akan names Array
+name[0] = "Akosua"
+name[1] = "Adwoa"
+name[2] = "Abenaa"
+name[3] = "Akua"
+name[4] = "Yaa"
+name[5] = "Afua"
+name[6] = "Ama"
+
+
+
+
 
 //Initialize Months Array
 months = new MakeArray(12);
