@@ -34,10 +34,6 @@ name[4] = "Yaa"
 name[5] = "Afua"
 name[6] = "Ama"
 
-
-
-
-
 //Initialize Months Array
 months = new MakeArray(12);
 months[0] = "January"

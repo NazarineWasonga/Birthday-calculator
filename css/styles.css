@@ -32,3 +32,24 @@ select {
 select {
   width: 162px;
 }
+input[type='checkbox'], input[type='radio'] { 
+    float: left;
+    margin-right: 10px;
+} 
+input[type='submit'] { 
+    float: left;
+    margin: 10px 0; 
+    padding: 10px 40px;
+    background-color: black;
+} 
+input[type='submit'], fieldset, textarea { 
+    border-radius: 5px; 
+    background-color: black;
+} 
+
+select { 
+    width: calc(100% - 4px); 
+    } 
+select {
+  width: 162px;
+}
