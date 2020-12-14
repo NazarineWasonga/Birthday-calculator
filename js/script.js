@@ -41,5 +41,5 @@ function calc() {
     } else if (gender === 'female') {
         document.getElementById('your-name').innerHTML = ("Your Name Is: " +females[anyDay] + ".");
     
-    } else { }
+    } else {}
 }
