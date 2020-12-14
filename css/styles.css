@@ -12,12 +12,12 @@ body {
   background-size: cover;
 }
 div {
-  border: 2px solid rgb(61, 218, 253);
+  border: 2px solid  rgb(10, 175, 240);
   border-radius: 5px;
   width: 90%;
   height: 90%;
-  border-left: 6px solid rgb(61, 218, 253);
-  background-color: rgb(61, 218, 253);
+  border-left: 6px solid  rgb(10, 175, 240);
+  background-color: rgb(10, 175, 240);
   
 }
 
