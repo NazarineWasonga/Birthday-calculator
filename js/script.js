@@ -1,45 +1,33 @@
 var males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var females = ["Akosu", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-var months = ["January", "Feburary", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"];
 
 
 
 
 function calc() {
-    var days = document.getElementById('day').value;
+    var DD = parseInt(document.getElementById('day').value);
+    var MM = parseInt(document.getElementById('month').value);
     var year = document.getElementById('year').value;
-    var month = document.getElementById('month').value;
     var gender = document.getElementById('gender').value;
+    var CC = year.slice(0, 2);
+    var YY = year.slice(2, 4);
 
-    var today = new Date();
-    // var dd   = today.getDate(days);
-    var mm = months[today.getMonth(month)];
-    var yyyy = today.getFullYear(year);
-    var anyDay = days[today.getDay()];
-
-    // Invalid Day
-    if ((day <= 0) || (day > 31)) {
-        alert("please enter valid day");
-    }
-
-    //Invalid Month 
-    if ((month <= 0) || (month > 12)) {
-        alert("please enter valid month");
-    }
-
-    // Invalid Year
-    if (year < 1900) {
-        alert("Are you that old!");
+        if (DD === "" || DD <= 0 || DD > 31 && MM === "" || MM <= 0 || MM > 12 && year < 1900 || year === "" || year.length > 4) {
+            alert("Please, make sure you have entered the correct information!!")
+        } else {
+            var days = Math.floor((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7);
     }
 
 
     if (gender === 'male') {
-        document.getElementById('your-name').innerHTML = ("Your Name Is: " + males[anyDay] + ".");
+        document.getElementById('your-name').innerHTML = ("Your Name Is: " + males[days] + ".");
 
     } else if (gender === 'female') {
-        document.getElementById('your-name').innerHTML = ("Your Name Is: " +females[anyDay] + ".");
-    
-    } else {}
+        document.getElementById('your-name').innerHTML = ("Your Name Is: " + females[days] + ".");
+
+    } else {
+        alert("I'm sorry to inform you, you never choose the gender!");
+    }
 }
+
