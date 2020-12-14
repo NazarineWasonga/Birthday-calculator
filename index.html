@@ -20,11 +20,11 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="row ">
-                        <div class="col-md-3 col-sm-4 col-xs-4 centuary">
+                        <div class="col-md-3 col-sm-3 col-xs-3 centuary">
                             <label for="centuary">Enter Your Centuary:</label>
                             <input type="text" class="form-control" id="centuary" placeholder="CC" />
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-4 year">
+                        <div class="col-md-3 col-sm-3 col-xs-3 year">
                             <label for="year">Enter Your Year:</label>
                             <input type="text" class="form-control" id="year" placeholder="YY" />
                         </div>
@@ -37,28 +37,34 @@
                             <input type="text" class="form-control" id="day" placeholder="DD" />
                         </div>
 
-                        <div class="col-md-3 col-sm-4 col-xs-4 gender">
+                        <div class="col-md-3 col-sm-3 col-xs-3 gender">
                             <label for="gender">Gender:</label>
                             <select class="custom-select" id="gender" required>
-                                <option selected disabled value="">Select</option>
-                                <option id="male">Male</option>
-                                <option id="female">Female</option>
-                                <p><input TYPE="button" VALUE="Submit" ONCLICK="compute(this.form)"> <input TYPE="reset"
-                                        VALUE="Clear"> </p>
-                                <p>Date of Birth: <input TYPE="text" NAME="result1" SIZE="18"> </p>
-                                <p>Day of Week: <input TYPE="text" NAME="result2" SIZE="18"> </p>
-                                <p>Akan name: <input TYPE="text" NAME="result3" SIZE="18"> </p>
+                            
+                                <option value="">Choose</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
                             </select>
                         </div>
                     </div>
+        
                 </div>
             </div>
         </form>
-        <p align="center">
-            <font face="arial" size="-2">This free script provided by</font><br>
-            <font face="arial, helvetica" size="-2"><a href="https://github.com/NazarineWasonga" target="_blank"
-                    class="logo">GitHub</a></font>
+        
+
+<button id="button" type="button" class="btn btn-info" onclick="calc()">Get Your Name</button>
+</div>
+<p align="center">
+    <font face="arial" size="-2">This free script provided by</font><br>
+    <font face="arial, helvetica" size="-2"><a href="https://github.com/NazarineWasonga" target="_blank"
+            class="logo">GitHub</a></font>
     </div>
+</body>
+
+</html>
+
+        
     <!--<script LANGUAGE="JavaScript">
 
 
