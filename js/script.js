@@ -27,7 +27,7 @@ function calc() {
         document.getElementById('your-name').innerHTML = ("Your Name Is: " + females[days] + ".");
 
     } else {
-        alert("I'm sorry to inform you, you never choose the gender!");
+        alert("Please make sure you've choosen your gender!!");
     }
 }
 
