@@ -1,4 +1,18 @@
-body {
+html{
+  font-size: 16;
+  line-height: 1.5;
+}body {
+    padding: 0;
+    margin: 0;
+    background-image: url("https://i.ytimg.com/vi/undYXrdbojQ/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    font-family: sans-serif;
+}
+
+/*body {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -11,8 +25,66 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 10px 10px 5px #aaaaaa;
+  background-size: 100vw 100vh;
+}*/
+title{
+  text-align: center;
+  margin-bottom: 5vh;
+  font-size: 1.8rem;
+} 
+
+/*navigation styles*/
+#navbar {
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(84, 194, 238));
+    width: 100vw;
 }
-div {
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 15px;
+    margin-right: 2vw;
+    text-decoration: none;
+}
+
+#navbar ul li a.active {
+    color:  rgb(84, 194, 238);
+}
+/*Welcome screen style */
+  #welcome-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(250, 6, 108);
+    font-size: 2rem;
+    margin: -15vh 5vw 10vh 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    cursor: default;
+    background-color: rgb(179, 175, 175);
+    box-shadow: hotpink;
+}
+/* About  section styles */
+.aboutBox {
+    min-height: 100vh;
+    padding: 5vw;
+    color: rgb(248, 248, 248);
+}
+.aboutBox p {
+    text-align: justify;
+}
+.form {
   border: 2px solid  rgb(84, 194, 238);
   border-radius: 5px;
   width: 90%;
@@ -55,7 +127,42 @@ select {
 select {
   width: 162px;
 }
+/* Contact section styles */
+.contactBox {
+    min-height: 1vh;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5vw;
+    color: white;
+    background-color: rgb(228, 130, 171);
+    box-shadow: 10px 10px 5px #10756d;
+}
+
+.contactBox p {
+    margin-top: 10vh;
+    font-size: 1.25rem;
+}
+
+.contactBox .links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactBox #profile-link, .contactBox .logo {
+    text-decoration: none;
+    color:  rgb(127, 128, 133);;
+    border: 1px solid  rgb(127, 128, 133);
+    padding: 10px;
+}
+
+.contactBox #profile-link:hover, .contactBox .logo:hover {
+    background-color: white;
+}
+
+
+/*Footer styles */
 footer{
   background-color: rgb(228, 130, 171);
-  box-shadow: 10px 10px 5px #10756d;;
+  box-shadow: 10px 10px 5px #10756d;
 }
