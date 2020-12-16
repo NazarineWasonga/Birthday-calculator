@@ -12,12 +12,12 @@ body {
   background-size: cover;
 }
 div {
-  border: 2px solid  rgb(10, 175, 240);
+  border: 2px solid  rgb(84, 194, 238);
   border-radius: 5px;
   width: 90%;
   height: 90%;
-  border-left: 6px solid  rgb(10, 175, 240);
-  background-color: rgb(10, 175, 240);
+  border-left: 6px solid  rgb(84, 194, 238);
+  background-color: rgb(84, 194, 238);
   
 }
 
@@ -53,4 +53,7 @@ select {
     } 
 select {
   width: 162px;
+}
+footer{
+  background-color: rgb(228, 130, 171);
 }
