@@ -57,7 +57,7 @@ title{
 }
 
 #navbar ul li a.active {
-    color:  rgb(84, 194, 238);
+    color:pink;
 }
 /*Welcome screen style */
   #welcome-section {
