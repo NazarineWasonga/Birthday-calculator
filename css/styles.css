@@ -10,6 +10,7 @@ body {
   background-image: url("https://i.ytimg.com/vi/undYXrdbojQ/maxresdefault.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 10px 10px 5px #aaaaaa;
 }
 div {
   border: 2px solid  rgb(84, 194, 238);
@@ -18,12 +19,12 @@ div {
   height: 90%;
   border-left: 6px solid  rgb(84, 194, 238);
   background-color: rgb(84, 194, 238);
-  
 }
 
 #your-name {
   color: rgb(250, 6, 108);
   text-align: center;
+  box-shadow: 10px 10px 5px #036e72;
 }
 
 input,
@@ -56,4 +57,5 @@ select {
 }
 footer{
   background-color: rgb(228, 130, 171);
+  box-shadow: 10px 10px 5px #10756d;;
 }
