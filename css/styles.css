@@ -79,7 +79,8 @@ title{
 .aboutBox {
     min-height: 100vh;
     padding: 5vw;
-    color: rgb(248, 248, 248);
+    color: black;
+    background-color: lightblue;
 }
 .aboutBox p {
     text-align: justify;
