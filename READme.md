@@ -52,7 +52,7 @@ includes any scripts that need to be run if necessary.
 
 BDD(Behavior Driven Development) integration plugin for Javascript
 ## **OUTLOOK**
-file:///home/moringaaccess/Pictures/Screenshot%20from%202020-12-17%2019-00-30.png
++ [/home/moringaaccess/Pictures/Screenshot from 2020-12-17 19-00-34.png]
 
 ## **Technologies used.**
 
